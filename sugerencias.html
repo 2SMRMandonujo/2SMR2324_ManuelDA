@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="index.css"></link>
+  <header><img src="images/Doom_Logo.png" width="150" id="nav-title"></img>
+    <nav>
+      <ul>
+        <li id="navtaguno"><a href="introduccion.html">Introducción</a></li>
+        <li id="navtagdos"><a href="historia.html">Historia</a></li>
+        <li id="navtagtre"><a href="terminologia.html">Terminología</a></li>
+        <li id="navtagcua"><a href="sourceports.html">Sourceports</a></li>
+        <li id="navtagcin"><a href="sugerencias.html">Sugerencias</a></li>
+      </ul>
+    </nav>
+  </header>
+<body>
+    
+	<h2>¡Sugiere tus modificaciones de Doom favoritas!</h2> 
+      <p>A continuación, podras acceder a un formulario en el que podrás sugerir tus mods de Doom preferidos, los cuales sera expuestos en una página externa para cualquiera para ver y, preferiblemente, descargar y jugar! En el formulario, introduce los datos requeridos, y se almacenaran estos en una página externa </p>
+  
+  <h1>Formulario de entrega</h1>
+  <form method="post" action="form.php">
+    
+  <h4>Nombre del Mod, Autor y URL</h4>
+    <input type="text" id="fnmod" name="fnmod" required>
+    <label for="fnmod">Introduce el nombre del mod</label>
+    <br>
+    <input type="text" id="fnautor" name="fnautor" required>
+    <label for="fnautor">Introduce el nombre del autor</label>
+    <br>
+    <input type="text" id="fnurl" name="fnurl" required>
+    <label for="fnurl">Introduce la URL de descargar</label>
+    <br>
+   
+  <h4>Describe el Mod </h4>
+    <input type="text" id="fndescripcion" name="fndescripcion" required>
+    <br>
+
+  <h4>Rating</h4>
+    <input type="number" id="fnrating" min="0" max="100">
+    <label for="website">Introduce el rating del mod</label>
+    
+  <h4>Data de salida</h4>
+    <input type="date"  id="date" name="date" min="1801-1-1" max="2024-12-31">
+    <label for="website">Introduce la data de salida</label>
+    
+  <h4>Introduce tu nombre y tu email (opcional)</h4>
+    <input type="text" id="fnsugerencia" name="fnsugerencia" required>
+    <input type="email" id="fnsugerenciaemail" type="fnsugerenciaemail">
+    <br>
+    
+
+  <h4>Enviar</h4>
+    <input type="submit" id="send" value="Enviar tu formulario">
+     <br>  
+    
+  </form>
+ <section id="redes" class="bottom center">
+  <ul>
+    <li><a class="infierno" href="#"></a></li>
+    <li><a class="yutube" href="#"></a></li>
+    <li><a class="RSS" href="#"></a></li>
+  </ul>
+</section>
+</body>
+</html>

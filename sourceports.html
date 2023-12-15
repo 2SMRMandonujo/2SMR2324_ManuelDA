@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="index.css"></link>
+  <header><img src="images/Doom_Logo.png" width="150" id="nav-title"></img>
+    <nav>
+      <ul>
+        <li id="navtaguno"><a href="introduccion.html">Introducción</a></li>
+        <li id="navtagdos"><a href="historia.html">Historia</a></li>
+        <li id="navtagtre"><a href="terminologia.html">Terminología</a></li>
+        <li id="navtagcua"><a href="sourceports.html">Sourceports</a></li>
+        <li id="navtagcin"><a href="sugerencias.html">Sugerencias</a></li>
+      </ul>
+    </nav>
+  </header>
+<body>
+
+<h2>Herramientas y Sourceports</h2> 
+
+  <p>Las herramientas de modding de Doom han sido muchas a lo largos, debido al tiempo que Doom lleva siendo modificado (especialmente gracias a que Jonh Carmack hubiese sacado el código fuente al público), pero aquí señalare 3 herramientas que son especialmente relevantes para los jugadores actuales de Doom:</p>
+    <ol>
+      <li>Dehacked: una de las herramientas originales para mods de Doom, siendo utilizada incluso actualmente. Esta permitiar editar ciertos valores del ejecutable de Doom directamente, permitiendo editar ciertos valores como hit points, sonidos, secuencias de fotogramas, cadenas de texto y otros valores. Las modificaciones se pueden distribuir en forma de "parches" DeHackEd que se pueden aplicar al ejecutable. Para poder hacer esto, DeHackEd tiene la capacidad de generar una copia exacta del ejecutable de Doom o Doom II. Sin embargo, gracias a la aparición de source-ports como Boom con la habilidad de cargar estos parches sin necesidad de cambiar el ejecutable, lo cual se convertiría en algo comun en source-ports modernos. Actualmente se usa para "WADS" que alteran ciertas carácteristicas pero que siguen estando basados en las mecanicas y programación de Doom original y que no alteran demasiado su funcionamiento. </li>
+      <li>ZScript: es un lenguaje de script exclusivo del Source-port GZDoom, reemplazando al antiguo DECORATE, admitiendo todas sus características, aunque con varias especificaciones menores y diferencias de sintaxis. También admite acceso directo a datos de nivel y actor, estructuras/clases adecuadas definidas por el usuario, métodos virtuales y más. ZScript se implementó inicialmente en ZDoom, pero fue desarrollado principalmente nunca se agregó a una versión oficial de ZDoom, que se suspendió en 2017. A partir de la versión 2.3.0 de GZDoom, todos los actores integrados se convirtieron a ZScript, migrando gran parte de la lógica del sourceport de C/C++ a ZScript. Esto ha permitido un nivel sin precedentes de modificación del juego, con casi todos los aspectos del juego expuestos a scripts, comvirtiendo a GZDoom y a ZScript en la base de una gran parte de mods de Doom.</li>
+        <li>Doom Builder 2 es un editor de niveles de Doom con soporte completo para todos los juegos de Doom y todos los source-ports populares. Las características populares incluyen una gran capacidad de personalización, prefabricados, código de dibujo avanzado y un modo 3D que permite explorar y editar las texturas de un nivel en tiempo real. También se incluye un editor de secuencias de comandos para motores que admiten secuencias de comandos.</li>
+      </ol>
+    <p>Tras hablar de las dos herramientas más comunes de ver en Doom, ahora voy a listar algunos de los source-ports para jugar Doom y sus mods más populares:</p>   
+
+<section class="grid">
+    <section class="gzdoom">
+          <a href=https://zdoom.org/downloads>
+          <img src="https://zdoom.org/w/images/2/25/Circle_gzdoom.png" width="256" height="256" title="GZDoom" alt="Paǵina de ZDoom">
+          </a>  
+
+      <p>GZDoom es un sourceport basado en ZDoom (un source-port anterior), con el objetivo de proporcionar las tecnologías de renderizado más recientes a Doom, teniendo acceso a ambos renderers OpenGL 4.5 y Vulkan, permitiendo capacidades para el motor como terreno y soporte para modelos 3D,siendo el source-port más modificable y usado, y el de preferencia de muchos para todo desde Mods hasta simplemente jugar el juego</p>
+    <ul>
+<li>Todas las funciones de ZDoom</li>
+<li>Renderizador OpenGL, que permite las siguientes características:</li>   
+<li>Pisos completos en 3D (incluidas pendientes)</li>
+<li>Suelos reflectantes</li>
+<li>Luces dinámicas, mapas brillantes, pisos resplandecientes, sombreadores de hardware personalizados</li>
+<li>Skyboxes estilo Quake II y Half-Life además de los skyboxes normales de ZDoom</li>
+<li>Filtros de reescalado opcionales de alta calidad (HQnX) para gráficos, sprites y texturas</li>
+<li>Compatibilidad con modelos MD2, MD3 y DMD</li>
+   </section>
+
+
+
+    <section class="prboom">
+          <a href=https://prboom.sourceforge.net/>
+       <img src="https://dashboard.snapcraft.io/site_media/appmedia/2018/06/prboom-plus.svg.png" width="256" height="256" title="PrBoom+" alt="Página de PrBoom +">
+       </a>
+       <p>PrBoom+: al contrario de otros sourceports de Doom, este tiene como objetivo traer una experiencia más tradicional, así como algunas mejoras respecto al motor en el que el WAD se basa. Además de todas las funciones de PrBoom, PrBoom+ ofrece:</p>
+        <ul>
+    <li>Cámara en 3ª Persona para reproducciones de demos</li>
+    <li>Cambiar la velocidad del juego dentro del juego (para reproducción de demos de jugador o de TAS y simplemente para jugar a diferentes velocidades)</li>
+    <li>Carga automática del WAD necesario para la reproducción, elegidos por el nombre de la demo o por la información presente en el archivo de demostración (si está grabado con PrBoom+)</li>
+    <li>Emulación precisa de Doom v1.2 si es necesario durante la reproducción de demostración o si lo solicita el usuario</li>
+    <li>Salida MIDI con emulación OPL, FluidSynth, PortMidi o SDL</li>
+    <li>Ogg Vorbis y reproducción de MP3</li>
+    <li>Optimizaciones de velocidad para niveles muy grandes, en comparación con PrBoom</li>
+    <li>HUD personalizable</li>
+        </ul>
+    </section>
+
+
+    <section class="zandronum">
+       <a href=https://zandronum.com/>
+       <img src="https://wiki.zandronum.com/common/za_exe2_logo_cropped160_padded.png" width="256" height="256" title="Zandronum" alt="Página de Zandronum">
+       </a>
+    <p>Zandronum: un source-port centrado en ofrecer una experiencia multijugador modernizada, ofreciendo nuevos modos de juego como capturar la bandera, invasión o dominación. La International Doom League lo adoptó como su puerto preferido en 2014.</p>
+        <ul>
+          <li>Soporte para hasta 64 jugadores en modo cooperativo, combate a muerte, combate a muerte por equipos, captura de la bandera, posesión, dominación, invasión, último hombre en pie, supervivencia y otros modos de juego.</li>
+          <li>Soporte para la mayoría de las funciones de ZDoom y GZDoom, incluido el renderizador acelerado por hardware de este último.
+También soporte continuo para funciones únicas de edición de Skulltag.</li>
+          <li>Consola, combinaciones de teclas estilo Quake, vista libre, saltos y otros controles avanzados.
+Soporte completo para todos los juegos del motor Doom, incluidos Heretic, Hexen y Strife.</li>
+          <li>Se ejecuta en Windows, Mac OS X y Linux.</li>
+        </ul>
+    <p>Estos son solo unos ejemplo de la cantidad de ports de Doom, sin embargo, hay muchos más de los listados aquí</p>
+    </section>
+</section>
+ <section id="redes" class="bottom center">
+  <ul>
+    <li><a class="infierno" href="#"></a></li>
+    <li><a class="yutube" href="#"></a></li>
+    <li><a class="RSS" href="#"></a></li>
+  </ul>
+</section>
+</body>
